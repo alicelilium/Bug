@@ -2,7 +2,7 @@
     Creates the Bug class - an interactive "bug" that can move along
     a wire to the left or the right (can be turned). Establishes all
     the appropriate methods that can affect the bug or be used to
-    view its status.		*/
+    view its status.	*/
 	
 package bugpkg;
 
