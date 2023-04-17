@@ -3,7 +3,6 @@
     They can move the bug one at a time, turn it around, and display its
     position on the screen. The user can exit at any time.              */
 
-
 //Import for Scanner
 import java.util.Scanner;
 import bugpkg.Bug;
