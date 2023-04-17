@@ -23,8 +23,13 @@ public class Bug {
 
     //User can construct with an initial point on wire
     public Bug(int startpoint) {
-        position = startpoint;
-
+	if (startpoint >= MAX_LEFT && startpoint <= MAX_RIGHT)
+		position = startpoint;
+	else {
+		position = (int)Math.floor(Math.random() * (Math.abs(MAX_LEFT)+MAX_RIGHT)- 50);
+		System.out.println("You have chosen a position outside of the wire. " 
+				+ "A random position along the wire has been chosen. ");
+	}
     }
 
     //Internal check for if bug has met the bounds
